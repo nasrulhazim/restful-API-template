@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Some hosts may require you to use the `RewriteBase` directive.
+# If you need to use the `RewriteBase` directive, it should be the
+# absolute physical path to the directory that contains this htaccess file.
+#
+# RewriteBase /
+
+# Cross domain access
+# Reference: http://www.9lessons.info/2014/12/create-restful-services-using-slim-php.html
+# Header add Access-Control-Allow-Origin "*"
+# Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+# Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
