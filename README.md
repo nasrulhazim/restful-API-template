@@ -4,14 +4,19 @@ Restful API Template - use for creating a Restful API.
 # Technologies
 
 [Slim Framework](http://www.slimframework.com/) - Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.
+
 [Eloquent](http://laravel.com/docs/5.0/eloquent) - The Eloquent ORM included with this template to provides a beautiful, simple ActiveRecord implementation for working with your database. Each database table has a corresponding "Model" which is used to interact with that table.
 
 # Structure
 
 `utils` - Currently I have a simple `Session` class. May add more in future
+
 `vendor` - Contained 3rd Party Library
+
 `lib` - Contained an extended class of Slim Framework
+
 `api` - Contained a list of API scripts
+
 `config` - Contained a list of Restful API configuration files
 
 # Configure
